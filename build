@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Compiling c file"
+gcc main.c -o memory -lpthread -lprussdrv
+
+echo "building pasm"
+pasm -b memory.p
