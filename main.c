@@ -67,6 +67,8 @@ int main(int argc, char** argv) {
    
    // Disable PRU and close memory mappings
    prussdrv_pru_disable(PRU_NUM);
+   prussdrv_pru_disable(1);
+
    prussdrv_exit ();
    return EXIT_SUCCESS;
 

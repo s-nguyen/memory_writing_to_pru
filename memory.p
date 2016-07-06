@@ -13,7 +13,7 @@
 #define PRU0_CTRL            0x22000
 #define PRU1_CTRL            0x24000
 #define CTPPR0               0x28
-#define OWN_RAM              0x000
+#define OWN_RAM              0x00000000
 #define OTHER_RAM            0x020
 #define SHARED_RAM           0x100
 
@@ -48,8 +48,6 @@ DONE:
     mov r1, 423
     mov r0, 0x00000000
     sbbo r1, r0, 0, 4
-    sub r10, r10, 4
-    sbbo r1, r10, 0, 4
 
 
     
